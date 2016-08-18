@@ -1,0 +1,9 @@
+version: '2'
+services:
+  stream:
+    build: .
+    command: /code/stream_server 5000 150 
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
