@@ -17,7 +17,6 @@ class Server
 {
     public:
         Server(boost::asio::io_service& io_service, short port, short lengthMaxFile);
-
         void handle_accept(Session* new_session, const boost::system::error_code& error);
 
     private:
